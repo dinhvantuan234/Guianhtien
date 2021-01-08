@@ -1,0 +1,64 @@
+.nav_toggle{
+    position: relative;
+    /* background-color: blue; */
+    width: 65px;
+    height: 65px;
+    cursor:pointer;
+    transition: .3s ease-in-out;
+    z-index: 560;
+}
+.bar1, 
+.bar2, 
+.bar3{
+    position: absolute;
+    left: 22%;
+    transform: translateX(-50%) translateY(-50%);
+    transform: rotate(0deg);
+    display: inline-block;
+    width: 37px;
+    height: 4px;
+    background-color: white;
+    border-radius: 10px;
+    transition: .3s ease-in-out;
+}
+.bar1{
+    top:25%
+}
+.bar2{
+    top:45%
+}
+.bar3{
+    top:65%
+}
+.nav_back{
+    position: absolute;
+    width: 0;
+    height: 100vh;
+    background-color: teal;
+    /* overflow: hidden; */
+    z-index: 650;
+    /* opacity: 0.3; */
+}
+.nav_back ul{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translateX(-50%)translateY(-50%);
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+   
+}
+.nav_back li{
+    margin: 1em 0;
+    color: brown;
+    font-weight: bold;
+    letter-spacing: 3px;
+    opacity: 0;
+    transition: .3s ease-in-out;
+    font-size: 3em;
+}
